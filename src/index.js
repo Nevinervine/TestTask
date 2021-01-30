@@ -1,17 +1,50 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+
+import './style/index.css';
+import './style/header.css';
+import './style/footer.css';
+
+import './js/header.js';
+
+import NameForm from './react/login';
+import Cart from './react/card';
+import Validation from './react/validation';
+import SimpleSlider from './react/slider';
 import reportWebVitals from './reportWebVitals';
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <NameForm password={'123'} login={'login'} />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('loginbuttons')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Cart />
+  </React.StrictMode>,
+  document.getElementById('card')
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Validation />
+  </React.StrictMode>,
+  document.getElementById('validation')
+);
+
+
+ReactDOM.render(
+  <React.StrictMode>
+    <SimpleSlider />
+  </React.StrictMode>,
+  document.getElementById('slider__main')
+);
+
+
+
 reportWebVitals();

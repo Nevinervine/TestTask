@@ -1,0 +1,36 @@
+.slider__main {
+    width: 800px;
+    height: 300px;
+    background-color: grey;
+  }
+
+  .slider__item {
+    height: 300px;
+    width: 100%;
+    background-color:grey;
+    position: relative;
+  }
+
+  .slider__text{
+    position: absolute;
+    width: 300px;
+    bottom: 40px;
+    right: 20px;
+    color: white;
+  }
+
+
+  .slider__description {
+    position: absolute;
+    right: 40px;
+  }
+
+
+  
+
+  @media screen and (max-width: 450px) {
+      
+.slider__main{
+    width:auto;
+    }
+  }

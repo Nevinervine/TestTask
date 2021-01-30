@@ -1,0 +1,78 @@
+.section-axios {
+    display: flex;
+    justify-content: center;
+    background-color: gainsboro;
+    padding: 40px 0;
+  }
+
+  .axios__container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .axios__item {
+    width: calc((100% - 200px)/4);
+    background-color: gray;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .axios__item-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .axios__img {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 40px;
+    background-color: white;
+    overflow: hidden;
+
+  }
+
+  .axios__img img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+
+  .axios__text {
+    max-width: 170px;
+    width: 100%;
+  }
+
+  .axios__header {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  
+  @media screen and (max-width: 450px) {
+      
+.axios__container{
+    display: block!important;
+  }
+  
+  .axios__item{
+    width: 100%;
+    margin-bottom: 20px
+  }
+  
+
+
+  .axios__item-container{
+    padding: 20px;
+  }
+  
+  .axios__item{
+    padding: 0;
+  }
+  
+
+  }
